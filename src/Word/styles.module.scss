@@ -1,0 +1,17 @@
+.checkbox {
+  @apply sr-only;
+
+  + label {
+    @apply inline-flex items-center justify-center text-center;
+    @apply p-2 rounded-3xl border-2 aspect-square shadow transition-all overflow-hidden overflow-ellipsis cursor-pointer;
+    @apply text-xs sm:text-base;
+    @apply text-orange-500 bg-orange-200 border-orange-400 shadow-black;
+  }
+  &:checked + label {
+    @apply text-green-500 bg-green-200 border-green-400;
+    @apply scale-90;
+  }
+  &:not(:checked) + label {
+    @apply hover:scale-105 focus:scale-105 active:scale-90 active:bg-green-200 active:border-green-400;
+  }
+}

@@ -8,7 +8,7 @@ const dictionnary = [
   "Dynamique",
   "Colère",
   "Prix essence (gilet jaune)",
-  "Nucleaire (fermeture fessenheim)",
+  "Nucleaire (fermeture Fessenheim)",
   'Citation "on les aura ces connards"',
   "Desislamisation",
   "France",
@@ -26,6 +26,8 @@ const dictionnary = [
   "Voile",
   "Insecurite",
   "Islam",
+  "Chomage",
+  "Inflation"
 ] as const;
 
 export default dictionnary
