@@ -1,1 +1,1 @@
-# bingo2022
+Bingo pour profiter du débat des présidentielle 2022 entre amis
