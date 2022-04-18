@@ -1,3 +1,5 @@
+import { Accessor } from "solid-js";
+
 export function shuffleArray<T>(array: T[]): T[] {
   let curId = array.length;
   // There remain elements to shuffle
@@ -20,10 +22,11 @@ function* range(first, last) {
 }
 
 export class LineColumnGetter<T> {
-  constructor(
-    private array: T[],
-    private dimensions: { width: number; height: number }
-  ) {}
+  private dimensions: { width: number; height: number };
+  constructor(private array: T[]) {
+    const width = Math.sqrt(this.array.length);
+    this.dimensions = { width, height: width };
+  }
   getLine(lineIndex: number) {
     const start = lineIndex * this.dimensions.width;
     return this.array.slice(start, start + this.dimensions.width);

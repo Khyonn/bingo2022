@@ -7,10 +7,9 @@ const Word = (props: {
   onClick: JSX.EventHandlerUnion<HTMLButtonElement, MouseEvent>;
 }) => {
   return (
-    <div class="relative">
+    <div class={styles.word}>
       <input
         type="checkbox"
-        class={styles.checkbox}
         name="word"
         id={props.word}
         onClick={props.onClick}
