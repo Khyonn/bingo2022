@@ -27,7 +27,9 @@ const dictionnary = [
   "Insecurite",
   "Islam",
   "Chomage",
-  "Inflation"
+  "Inflation",
+  "Facs",
+  "Rembourser la dette"
 ] as const;
 
 export default dictionnary
