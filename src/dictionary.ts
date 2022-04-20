@@ -34,6 +34,7 @@ const dictionnary = [
   "Inflation",
   "Facs",
   "La dette",
+  "Politique écologique"
 ] as const;
 
 export default dictionnary;
