@@ -37,7 +37,7 @@ const DictionaryDialog = (
           Si le nombre de mots renseignés est inférieur au nombre de cases,
           alors votre dictionnaire ne sera pas pris en compte. <br />
           Une fois votre dictionnaire validé, cliquez sur "Relancer" pour
-          utilisez vos mots sur la grille
+          utiliser vos mots sur la grille
         </p>
         <textarea
           ref={dico}
